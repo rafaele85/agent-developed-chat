@@ -1,8 +1,8 @@
 # Iteration 001: Monorepo Setup
 
-**Status**: Planning  
-**Date Started**: (fill when you start)  
-**Date Completed**: N/A
+**Status**: Completed
+**Date Started**: 2026-01-01
+**Date Completed**: 2026-01-01
 
 ---
 
@@ -31,15 +31,15 @@ Initialize git repository and establish npm workspace structure with minimal boi
 ---
 
 ## Acceptance Criteria
-- [ ] Git repository initialized with initial commit
-- [ ] `.gitignore` excludes `node_modules/`, `dist/`, `.env`, common IDE files
-- [ ] Root `package.json` declares workspaces: `["backend", "frontend"]`
-- [ ] `backend/package.json` exists with name `@my-chat-project/backend`
-- [ ] `frontend/package.json` exists with name `@my-chat-project/frontend`
-- [ ] `README.md` contains project overview matching the provided description
-- [ ] `.nvmrc` specifies Node.js version
-- [ ] Running `npm install` at root succeeds without errors
-- [ ] Running `npm --workspaces run placeholder` shows both workspaces (even if they do nothing yet)
+- [x] Git repository initialized with initial commit
+- [x] `.gitignore` excludes `node_modules/`, `dist/`, `.env`, common IDE files
+- [x] Root `package.json` declares workspaces: `["backend", "frontend"]`
+- [x] `backend/package.json` exists with name `@my-chat-project/backend`
+- [x] `frontend/package.json` exists with name `@my-chat-project/frontend`
+- [x] `README.md` contains project overview matching the provided description
+- [x] `.nvmrc` specifies Node.js version
+- [x] Running `npm install` at root succeeds without errors
+- [x] Running `npm --workspaces run placeholder` shows both workspaces (even if they do nothing yet)
 
 ---
 
@@ -80,14 +80,18 @@ Summarize project purpose, philosophy, and structure from the original spec.
 ---
 
 ## Notes & Decisions
-_(to be filled during execution)_
+- Chose Node.js 20.x for LTS support
+- Used scoped package names (`@my-chat-project/*`) for clear workspace identification
+- Enhanced `.gitignore` with comprehensive patterns for various IDEs and OS files
+- Added standard workspace scripts (test, build, dev) to root package.json for future use
+- All workspace verification passed successfully
 
 ---
 
 ## Completion Checklist
-- [ ] All files created as specified
-- [ ] `npm install` runs successfully
-- [ ] Workspaces recognized by npm
-- [ ] Git repository initialized with proper ignores
-- [ ] This iteration doc updated with completion date and notes
-- [ ] `TODO.md` updated (move this iteration to "Completed")
+- [x] All files created as specified
+- [x] `npm install` runs successfully
+- [x] Workspaces recognized by npm
+- [x] Git repository initialized with proper ignores
+- [x] This iteration doc updated with completion date and notes
+- [x] `TODO.md` updated (move this iteration to "Completed")

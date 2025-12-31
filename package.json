@@ -1,0 +1,19 @@
+{
+  "name": "chat",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time WebSocket chat application with Fastify backend and React frontend",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "test": "npm --workspaces run test",
+    "build": "npm --workspaces run build",
+    "dev": "npm --workspaces run dev"
+  }
+}

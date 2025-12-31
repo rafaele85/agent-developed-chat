@@ -1,0 +1,9 @@
+{
+  "name": "@chat/backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend WebSocket server for the chat application",
+  "scripts": {
+    "placeholder": "echo 'Workspace ready'"
+  }
+}
