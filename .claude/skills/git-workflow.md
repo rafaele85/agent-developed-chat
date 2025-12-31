@@ -144,18 +144,31 @@ If any verification fails, **stop and report to human** rather than committing b
 
 ---
 
+
 ## Working with Iteration Workflow
 
 ### Standard Iteration Commit Flow
 For a typical iteration:
 
 1. Human approves iteration spec
-2. Agent creates feature branch: `feat/iter-XXX-description`
+2. **Agent MUST create feature branch FIRST**: `feat/iter-XXX-description`
 3. Agent implements changes
 4. Agent runs all verification checks
 5. Agent creates commit(s) with conventional messages
 6. Agent reports completion to human
 7. Human reviews, merges PR
+
+### Creating Branch at Start of Iteration
+**CRITICAL**: Before making ANY code changes for an iteration:
+1. Check current branch with `git branch --show-current`
+2. If not on `main`, ask human if you should switch
+3. Create feature branch: `git checkout -b feat/iter-XXX-description`
+4. Confirm branch creation to human
+5. Then proceed with implementation
+
+The feature branch name should match the iteration file name.
+Example: `iter-002-backend-typescript.md` → `feat/iter-002-backend-typescript`
+
 
 ### Multiple Commits Per Iteration
 It's acceptable to create multiple commits during one iteration:
