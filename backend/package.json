@@ -4,6 +4,11 @@
   "private": true,
   "description": "Backend WebSocket server for the chat application",
   "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
     "placeholder": "echo 'Workspace ready'"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
