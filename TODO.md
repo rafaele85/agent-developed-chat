@@ -1,10 +1,9 @@
 # TODO - WebSocket Chat Project
 
 ## Current Iteration
-- **iter-002** - Backend workspace setup (Fastify, TypeScript, basic configs)
+- **iter-003** - Backend WebSocket server foundation
 
 ## Upcoming Iterations (Planned)
-- iter-003: Backend WebSocket server foundation
 - iter-004: Frontend workspace setup (React, TypeScript, Vite)
 - iter-005: Frontend basic UI shell
 - iter-006: WebSocket client connection
@@ -14,6 +13,7 @@
 - iter-010: CI/CD pipeline setup
 
 ## Completed Iterations
+- **iter-002-backend-typescript-setup** (2026-01-01) - Backend TypeScript compilation setup
 - **iter-001-monorepo-setup** (2026-01-01) - Initialize repository and workspace structure
 
 ---
